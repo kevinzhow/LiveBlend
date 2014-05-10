@@ -21,6 +21,7 @@
 		0A812A69191CF550001D958D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A812A4B191CF550001D958D /* UIKit.framework */; };
 		0A812A71191CF550001D958D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A812A6F191CF550001D958D /* InfoPlist.strings */; };
 		0A812A73191CF550001D958D /* LiveBlendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A812A72191CF550001D958D /* LiveBlendTests.m */; };
+		0A812A87191CF696001D958D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A812A86191CF696001D958D /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0A812A6E191CF550001D958D /* LiveBlendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiveBlendTests-Info.plist"; sourceTree = "<group>"; };
 		0A812A70191CF550001D958D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A812A72191CF550001D958D /* LiveBlendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveBlendTests.m; sourceTree = "<group>"; };
+		0A812A85191CF696001D958D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		0A812A86191CF696001D958D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		0A812A4D191CF550001D958D /* LiveBlend */ = {
 			isa = PBXGroup;
 			children = (
+				0A812A84191CF696001D958D /* UIImageEffects */,
 				0A812A56191CF550001D958D /* LBAppDelegate.h */,
 				0A812A57191CF550001D958D /* LBAppDelegate.m */,
 				0A812A59191CF550001D958D /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				0A812A6F191CF550001D958D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A812A84191CF696001D958D /* UIImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				0A812A85191CF696001D958D /* UIImage+ImageEffects.h */,
+				0A812A86191CF696001D958D /* UIImage+ImageEffects.m */,
+			);
+			path = UIImageEffects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A812A87191CF696001D958D /* UIImage+ImageEffects.m in Sources */,
 				0A812A58191CF550001D958D /* LBAppDelegate.m in Sources */,
 				0A812A54191CF550001D958D /* main.m in Sources */,
 				0A812A5E191CF550001D958D /* LBViewController.m in Sources */,
@@ -380,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LiveBlend/LiveBlend-Prefix.pch";
 				INFOPLIST_FILE = "LiveBlend/LiveBlend-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LiveBlend/LiveBlend-Prefix.pch";
 				INFOPLIST_FILE = "LiveBlend/LiveBlend-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

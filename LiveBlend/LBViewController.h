@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LBViewController : UIViewController
+@interface LBViewController : UIViewController<UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *blurImageView;
+@property (nonatomic) UIImage * blendImage;
+@property (nonatomic) UIImageView * effectedImageView;
 
+@property (nonatomic) CGPoint startLocation;
 @end
