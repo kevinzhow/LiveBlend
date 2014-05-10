@@ -20,10 +20,7 @@
     [super viewDidLoad];
     self.blurImageView.image = [[UIImage imageNamed:@"TBBT"] applyDarkEffect];
     
-    self.blendImage = [[self.blurImageView.image tintedImageUsingColor:[UIColor whiteColor]] copy];
-
-
-//    self.blurImageView.image = self.blendImage;
+    self.blendImage = [self.blurImageView.image tintedImageUsingColor:[UIColor whiteColor]];
     
     self.effectedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(120, 120, 160.0, 50.0)];
     
@@ -62,8 +59,7 @@
         
         self.effectedImageView.center = stopLocation;
         self.effectedImageView.image = [self.blendImage cropWithRect:self.effectedImageView.frame];
-        NSLog(@"Scale is %f %f",self.blurImageView.image.scale, self.effectedImageView.image.scale);
-//        self.blurImageView.image = [UIImage imageWithCGImage:imageRef];
+
     }
     
 }
