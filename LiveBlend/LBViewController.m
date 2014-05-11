@@ -52,11 +52,6 @@
     }else{
         CGPoint stopLocation = [sender locationInView:self.view];
         
-        CGRect newFrame = self.effectedImageView.frame;
-        
-        newFrame.origin.x = stopLocation.x;
-        newFrame.origin.y = stopLocation.y;
-        
         self.effectedImageView.center = stopLocation;
         self.effectedImageView.image = [self.blendImage cropWithRect:self.effectedImageView.frame];
 
