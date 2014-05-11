@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CC3016AE-779C-4434-AEA0-F0BD89A52E1D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LiveBlend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88D64ADD-1F45-486F-BE4F-8D3B7737D0BE</key>
+		<string>ssh://github.com/kevinzhow/LiveBlend.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LiveBlend.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88D64ADD-1F45-486F-BE4F-8D3B7737D0BE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/kevinzhow/LiveBlend.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88D64ADD-1F45-486F-BE4F-8D3B7737D0BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88D64ADD-1F45-486F-BE4F-8D3B7737D0BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LiveBlend</string>
+		</dict>
+	</array>
+</dict>
+</plist>

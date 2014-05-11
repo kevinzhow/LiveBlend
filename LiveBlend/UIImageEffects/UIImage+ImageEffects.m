@@ -101,7 +101,7 @@
 
 @implementation UIImage (ImageEffects)
 
-- (UIImage *)tintedImageUsingColor:(UIColor *)tintColor;
+- (UIImage *)tintedImageUsingColor:(UIColor *)tintColor withBlendMode:(CGBlendMode )blendMode;
 {
     UIGraphicsBeginImageContextWithOptions (self.size, NO, [[UIScreen mainScreen] scale]);
     
@@ -114,7 +114,7 @@
     // tint image (loosing alpha).
     // kCGBlendModeOverlay is the closest I was able to match the
     // actual process used by apple in navigation bar
-    CGContextSetBlendMode(context, kCGBlendModeOverlay);
+    CGContextSetBlendMode(context, blendMode);
     [tintColor setFill];
     CGContextFillRect(context, rect);
     

@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.blurImageView.image = [[UIImage imageNamed:@"TBBT"] applyDarkEffect];
     
-    self.blendImage = [self.blurImageView.image tintedImageUsingColor:[UIColor whiteColor]];
+    self.blendImage = [self.blurImageView.image tintedImageUsingColor:[UIColor whiteColor] withBlendMode:kCGBlendModeOverlay];
     
     self.effectedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(120, 120, 160.0, 50.0)];
     

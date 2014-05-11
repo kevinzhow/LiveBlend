@@ -101,7 +101,7 @@
 - (UIImage *)applyExtraLightEffect;
 - (UIImage *)applyDarkEffect;
 - (UIImage *)applyTintEffectWithColor:(UIColor *)tintColor;
-- (UIImage *)tintedImageUsingColor:(UIColor *)tintColor;
+- (UIImage *)tintedImageUsingColor:(UIColor *)tintColor withBlendMode:(CGBlendMode )blendMode;
 - (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
 - (UIImage *)cropWithRect:(CGRect)rect;
 
